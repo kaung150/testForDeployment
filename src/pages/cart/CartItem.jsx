@@ -22,7 +22,7 @@ const CartItem = (props) => {
 
                     <div className="input-group input-group-sm mt-3">
                         <button className="btn btn-primary btn-sm" onClick={() => addCartItem(id)}>+</button>
-                        <input type="text" className="form-control" style={{ width:"5vw" }} value={cartItems[id]} onChange={(ev) => updateCartItemCount(Number(ev.target.value), id)} />
+                        <input type="text" className="form-control" style={{ width:50 }} value={cartItems[id]} onChange={(ev) => updateCartItemCount(Number(ev.target.value), id)} />
                         <button className="btn btn-primary btn-sm" onClick={() => removeCartItem(id)}>-</button>
                     </div>
                 </div>
